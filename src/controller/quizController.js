@@ -24,7 +24,7 @@ const serveQuiz = (req, res) => {
 
 
 
-export const submitQuiz = (req, res) => {
+const submitQuiz = (req, res) => {
   try {
     const { student_id, quiz_id, answers, focus_minutes } = req.body;
 
