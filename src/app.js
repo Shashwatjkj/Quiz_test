@@ -12,7 +12,9 @@ const PORT = process.env.PORT || 8000;
 
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors(
+  
+));
 
 import homeRouter from "./routers/home.js";
 import studentRoutes from "./routers/student.routes.js";

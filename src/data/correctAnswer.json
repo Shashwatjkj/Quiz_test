@@ -1,0 +1,33 @@
+{
+  "quiz_id": "quiz_001",
+  "correct_answers": [
+    {
+      "question_id": "q1",
+      "correct": "Backend JavaScript runtime"
+    },
+    {
+      "question_id": "q2",
+      "correct": "MongoDB"
+    },
+    {
+      "question_id": "q3",
+      "correct": "POST"
+    },
+    {
+      "question_id": "q4",
+      "correct": "React"
+    },
+    {
+      "question_id": "q5",
+      "correct": "Application Programming Interface"
+    },
+    {
+      "question_id": "q6",
+      "correct": "200"
+    },
+    {
+      "question_id": "q7",
+      "correct": "npm init"
+    }
+  ]
+}
