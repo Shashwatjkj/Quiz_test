@@ -48,7 +48,7 @@ const submitQuiz = (req, res) => {
     }
 
     // Load correct answers JSON
-    const correctPath = path.join(process.cwd(), "src", "data", "correctAnswers.json");
+    const correctPath = path.join(process.cwd(), "src", "data", "correctAnswer.json");
     const correctData = JSON.parse(fs.readFileSync(correctPath, "utf8"));
     const correctAnswers = correctData.correct_answers;
 
