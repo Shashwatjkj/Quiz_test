@@ -1,0 +1,21 @@
+{
+  "name": "bigproject",
+  "version": "1.0.0",
+  "description": "building something new",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shashwat",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^12.4.6",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.2"
+  }
+}

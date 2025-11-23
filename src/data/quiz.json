@@ -1,0 +1,75 @@
+{
+  "quiz_id": "quiz_001",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is Node.js primarily used for?",
+      "options": [
+        "Backend JavaScript runtime",
+        "Mobile development framework",
+        "Machine learning platform",
+        "Relational database system"
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "Which database is a NoSQL database?",
+      "options": [
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "SQLite"
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "Which HTTP method is used to submit data to a server?",
+      "options": [
+        "GET",
+        "POST",
+        "DELETE",
+        "HEAD"
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "Which of the following is a JavaScript framework used for frontend?",
+      "options": [
+        "React",
+        "Django",
+        "Laravel",
+        "Spring Boot"
+      ]
+    },
+    {
+      "id": "q5",
+      "text": "What does API stand for?",
+      "options": [
+        "Application Programming Interface",
+        "Applied Program Interaction",
+        "Application Performance Index",
+        "Applied Protocol Integration"
+      ]
+    },
+    {
+      "id": "q6",
+      "text": "What response code indicates a successful request?",
+      "options": [
+        "404",
+        "200",
+        "500",
+        "301"
+      ]
+    },
+    {
+      "id": "q7",
+      "text": "Which command initializes a new Node.js project?",
+      "options": [
+        "npm init",
+        "npm install",
+        "node start",
+        "npm generate"
+      ]
+    }
+  ]
+}
