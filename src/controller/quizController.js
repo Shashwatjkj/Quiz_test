@@ -71,6 +71,8 @@ const submitQuiz = (req, res) => {
       evaluation = "fail";
     }
 
+    
+
     // Final response
     return res.status(200).json({
       status: evaluation,

@@ -13,18 +13,24 @@ const PORT = process.env.PORT || 8000;
 
 app.use(bodyParser.json());
 app.use(cors(
-  
+
 ));
 
 import homeRouter from "./routers/home.js";
 import studentRoutes from "./routers/student.routes.js";
 import quizRoutes from "./routers/quiz.routes.js";
+import intervention from "./routers/intervention.js";
+import getRemedial  from "./routers/remedial.routes.js";
 
 app.use("/", homeRouter);
 
 app.use("/api-student", studentRoutes);
 
 app.use("/api-quiz",quizRoutes)
+
+ app.use("/api-intervention",intervention)
+
+app.use("/api-remedial",getRemedial)
 
 
 
