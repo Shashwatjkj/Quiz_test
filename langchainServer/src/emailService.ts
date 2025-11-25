@@ -117,7 +117,7 @@ export async function sendEmail(
 ): Promise<any> {
   try {
     console.log(`📧 Sending email to ${recipient}...`);
-    console.log(`${recipient}---subj${subject}`)
+    console.log(`${recipient}---subject---${subject}`)
 
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
