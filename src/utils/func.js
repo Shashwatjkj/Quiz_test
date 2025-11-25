@@ -1,8 +1,5 @@
 async function timer (){
-    const data =await fetch("https://dummyjson.com/quotes")
-    console.log(`Api hit\n${data}`)
-
+console.log("Ready to start .")
 }
-
 timer()
 export default timer;
