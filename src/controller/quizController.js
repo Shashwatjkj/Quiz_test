@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import db from "../../database/db.js";
 
 const serveQuiz = (req, res) => {
   try {
@@ -68,7 +69,7 @@ const submitQuiz = (req, res) => {
     if (score > 5 && focus_minutes <= 30) {
       evaluation = "success";
     } else {
-          db.prepare(`INSERT INTO interventions (id, student_email) VALUES (?, ?)`).run(crypto.randomUUID(), student_email);
+      db.prepare(`INSERT INTO interventions (id, student_email) VALUES (?, ?)`).run(crypto.randomUUID(), student_email);
 
       evaluation = "fail";
     }
