@@ -26,7 +26,7 @@ const serveQuiz = (req, res) => {
 
 const submitQuiz = (req, res) => {
   try {
-    const { student_id, quiz_id, answers, focus_minutes } = req.body;
+    const { student_id, quiz_id, answers, focus_minutes, student_email } = req.body;
 
     // Validate request body
     if (!student_id || !quiz_id || !answers || focus_minutes === undefined) {
@@ -68,6 +68,8 @@ const submitQuiz = (req, res) => {
     if (score > 5 && focus_minutes <= 30) {
       evaluation = "success";
     } else {
+          db.prepare(`INSERT INTO interventions (id, student_email) VALUES (?, ?)`).run(crypto.randomUUID(), student_email);
+
       evaluation = "fail";
     }
 

@@ -26,15 +26,15 @@ CREATE TABLE IF NOT EXISTS daily_logs (
 
 -- 3) INTERVENTIONS TABLE
 CREATE TABLE IF NOT EXISTS interventions (
-  id TEXT PRIMARY KEY,               -- UUID
-  student_id TEXT NOT NULL,
-  task_text TEXT NOT NULL,
-  status TEXT NOT NULL DEFAULT 'Pending',  -- Pending | InProgress | Completed
-  assigned_by TEXT,                  -- mentor id/email
+  id TEXT PRIMARY KEY,
+  student_email TEXT NOT NULL,
+  mentor_name TEXT NOT NULL DEFAULT 'xxy',
+  task TEXT NOT NULL DEFAULT 'do dsa question',
+  status TEXT NOT NULL DEFAULT 'Pending',
   assigned_at TEXT DEFAULT (datetime('now')),
-  completed_at TEXT,
-  FOREIGN KEY (student_id) REFERENCES students(id) ON DELETE CASCADE
+  completed_at TEXT
 );
+
 
 -- 4) MENTORS TABLE (optional but useful)
 CREATE TABLE IF NOT EXISTS mentors (
