@@ -3,6 +3,6 @@ import { getRemedialTask } from "../controller/remedialcontroller.js";
 
 const router = Router();
 
-router.get("/get-remedial", getRemedialTask);
+router.post("/get-remedial", getRemedialTask);
 
 export default router;
