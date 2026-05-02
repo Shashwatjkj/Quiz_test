@@ -24,21 +24,21 @@ import getRemedial  from "./routers/remedial.routes.js";
 
 app.use("/", homeRouter);
 
-app.use("/api-student", studentRoutes);
+// app.use("/api-student", studentRoutes);
 
-app.use("/api-quiz",quizRoutes)
+// app.use("/api-quiz",quizRoutes)
 
-//app.use("/api-intervention",intervention)
+// //app.use("/api-intervention",intervention)
 
-app.use("/api-remedial",getRemedial)
-
-
+// app.use("/api-remedial",getRemedial)
 
 
 
 
 
-connectDB()
+
+
+// connectDB()
 .then(() => {
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
