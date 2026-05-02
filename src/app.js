@@ -38,7 +38,7 @@ app.use("/", homeRouter);
 
 
 
-// connectDB()
+connectDB()
 .then(() => {
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
