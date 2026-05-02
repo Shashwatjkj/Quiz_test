@@ -20,12 +20,12 @@ export function createEmailAgent() {
     model,
     tools: [sendEmailTool],
     systemPrompt: `You are an AI email assistant. Your job is to:
-1. Send professional emails when asked
-2. Check for responses from people
-3. Process responses by taking appropriate actions (approve, reject, escalate, save)
-4. Reply to emails with relevant information
+                    1. Send professional emails when asked
+                    2. Check for responses from people
+                    3. Process responses by taking appropriate actions (approve, reject, escalate, save)
+                    4. Reply to emails with relevant information
 
-Be professional and clear in all communications.`,
+                    Be professional and clear in all communications.`,
   });
 
   return agent;
